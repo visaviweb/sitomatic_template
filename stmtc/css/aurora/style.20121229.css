@@ -1,0 +1,976 @@
+/* -------------- normalize  ----------------*/
+/* normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+ * Removes default margin.
+ */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/*
+ * Sets consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0;
+}
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html,
+button,
+input,
+select,
+textarea {
+  color: black;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+  line-height: 1.45;
+  background: #aac2c2;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  color: black;
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  color: black;
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+img {
+  vertical-align: middle;
+}
+
+/* -------------- layout 2col fixed  ----------------*/
+.ie6 body {
+  text-align: center;
+}
+
+.ie6 .page {
+  text-align: left;
+}
+
+.page {
+  width: 980px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main {
+  display: inline;
+  width: 740px;
+  float: right;
+}
+
+.sidebar {
+  display: inline;
+  float: left;
+  width: 240px;
+}
+
+.noSidebar .main {
+  width: 980px;
+}
+
+.body, .pageFooter {
+  clear: both;
+}
+
+.pSection, .sClear, .eClear {
+  clear: both;
+}
+
+.eImage {
+  margin-bottom: 5px;
+}
+
+.alignC {
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  text-align: center;
+}
+
+.alignR {
+  float: right;
+  display: inline;
+  margin-left: 5px;
+}
+
+.alignL {
+  float: left;
+  display: inline;
+  margin-right: 5px;
+}
+
+.lt-ie8 .introC, .lt-ie8 .pSection, .lt-ie8 .lastS {
+  overflow: visible;
+  zoom: 1;
+}
+
+.intro, .pSection {
+  clear: both;
+  margin-left: 15px;
+}
+
+.intro {
+  margin-right: 15px;
+}
+
+.section {
+  float: left;
+  width: 100%;
+}
+
+.sInner {
+  margin-right: 15px;
+}
+
+.s75 {
+  width: 75%;
+}
+
+.s66 {
+  width: 66.666%;
+}
+
+.s50 {
+  width: 50%;
+}
+
+.s33 {
+  width: 33.333%;
+}
+
+.s25 {
+  width: 25%;
+}
+
+.lt-ie8 .lastS {
+  float: none;
+  width: auto;
+}
+
+.ie6 .lastS {
+  position: relative;
+  left: -3px;
+  margin-right: -3px;
+}
+
+.lt-ie8 .s100 {
+  left: auto;
+  margin-right: 0;
+}
+
+.subMenu, .sidebarBox {
+  margin-left: 15px;
+}
+
+/* ----------- typo base -------------*/
+ul, ol, dl, p, pre, blockquote, cite, table {
+  margin: 0 0 18px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  margin-bottom: 14px;
+}
+
+h2, h3 {
+  margin-bottom: 11px;
+}
+
+h4, h5, h6 {
+  margin-bottom: 6px;
+}
+
+h1 {
+  font-size: 200%;
+}
+
+h2 {
+  font-size: 145%;
+}
+
+h3 {
+  font-size: 130%;
+}
+
+h4 {
+  font-size: 115%;
+}
+
+h5 {
+  font-size: 100%;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 100%;
+  font-style: italic;
+}
+
+table h1, table h2, table h3, table h4, table h5, table h6, table p, table ul, table ol, table dl, li h1, li h2, li h3, li h4, li h5, li h6, li p, li ul, li ol, li dl, blockquote h1, blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6, blockquote p, blockquote ul, blockquote ol, blockquote dl {
+  margin: 0;
+}
+
+th, td {
+  border: 1px solid #cccccc;
+  padding: 4px 6px;
+}
+
+th {
+  font-weight: bold;
+}
+
+/* ----------- horizontal main menu -------------*/
+.mainMenu ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.mainMenu li {
+  list-style-image: none;
+  list-style-type: none;
+  margin: 0;
+  float: left;
+}
+.mainMenu a, .mainMenu span {
+  display: block;
+  float: left;
+  padding: 0 10px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+/* ----------- main content layout -------------*/
+.lt-ie8 .introC, .lt-ie8 .pSection, .lt-ie8 .lastS {
+  overflow: visible;
+  zoom: 1;
+}
+
+.intro, .pSection {
+  clear: both;
+  margin-left: 20px;
+}
+
+.intro {
+  margin-right: 20px;
+}
+
+.section {
+  float: left;
+  width: 100%;
+}
+
+.sInner {
+  margin-right: 20px;
+}
+
+.s75 {
+  width: 75%;
+}
+
+.s66 {
+  width: 66.666%;
+}
+
+.s50 {
+  width: 50%;
+}
+
+.s33 {
+  width: 33.333%;
+}
+
+.s25 {
+  width: 25%;
+}
+
+.lt-ie8 .lastS {
+  float: none;
+  width: auto;
+}
+
+.ie6 .lastS {
+  position: relative;
+  left: -3px;
+  margin-right: -3px;
+}
+
+.lt-ie8 .s100 {
+  left: auto;
+  margin-right: 0;
+}
+
+.pSection, .sClear, .eClear {
+  clear: both;
+}
+
+.eImage {
+  margin-bottom: 10px;
+}
+
+.iLegend {
+  padding: 5px;
+}
+
+.alignC {
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  text-align: center;
+}
+
+.alignR {
+  float: right;
+  display: inline;
+  margin-left: 10px;
+}
+
+.alignL {
+  float: left;
+  display: inline;
+  margin-right: 10px;
+}
+
+/* ----------- sidebar menu -------------*/
+.subMenu h3 {
+  margin-bottom: 0;
+}
+.subMenu ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.subMenu li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.subMenu a, .subMenu span {
+  text-decoration: none;
+  padding: 4px 8px 4px 8px;
+  display: inline-block;
+  display: block;
+}
+
+/* ----------- don't add margin in top page, footer and image legend -------------*/
+.iLegend h1, .iLegend h2, .iLegend h3, .iLegend h4, .iLegend h5, .iLegend h6, .iLegend p, .iLegend ul, .iLegend ol, .iLegend dl, .iLegend table, .pageFooter h1, .pageFooter h2, .pageFooter h3, .pageFooter h4, .pageFooter h5, .pageFooter h6, .pageFooter p, .pageFooter ul, .pageFooter ol, .pageFooter dl, .pageFooter table, .pageTop h1, .pageTop h2, .pageTop h3, .pageTop h4, .pageTop h5, .pageTop h6, .pageTop p, .pageTop ul, .pageTop ol, .pageTop dl, .pageTop table {
+  margin: 0;
+}
+
+/* ----------- don't show links in header -------------*/
+h1 a:link, h1 a:visited, h2 a:link, h2 a:visited, h3 a:link, h3 a:visited, h4 a:link, h4 a:visited, h5 a:link, h5 a:visited, h6 a:link, h6 a:visited {
+  color: false;
+  text-decoration: none;
+}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+  text-decoration: underline;
+}
+
+/* --------------------------------------------*/
+/* ----------- decoration: Aurora -------------*/
+/* -------------- page general ----------------*/
+body {
+  background: #aac2c2;
+}
+
+.body, .mainMenu {
+  *zoom: 1;
+}
+.body:after, .mainMenu:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.page {
+  background: white url(img/header-bg.jpg) no-repeat left -50px;
+  margin: 20px auto 50px;
+  -webkit-box-shadow: #7da2a2 0 0 10px;
+  -moz-box-shadow: #7da2a2 0 0 10px;
+  box-shadow: #7da2a2 0 0 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.pageFooter {
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+a:link {
+  color: #7e2f22;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: red;
+}
+
+/* ----------- header -------------*/
+.pageTop {
+  text-align: right;
+  color: #d7e2e2;
+  padding: 20px 20px 0 20px;
+}
+.pageTop a:link, .pageTop a:visited {
+  color: #e5eded;
+}
+
+.siteLogo {
+  padding: 0 20px 20px 20px;
+}
+
+.siteTitle {
+  font-style: italic;
+  color: #f4f7f7;
+  letter-spacing: 3px;
+}
+
+/* ----------- main menu -------------*/
+.mainMenu {
+  line-height: 35px;
+  padding-left: 20px;
+  background: transparent url(img/menu-bg.png) repeat;
+}
+.mainMenu a {
+  color: #d7e2e2;
+}
+.mainMenu .currentItem a, .mainMenu .currentItem span {
+  background: #412925;
+  color: white;
+}
+
+/* ----------- main content -------------*/
+.body {
+  background-color: #f9f7f1;
+  padding-bottom: 40px;
+}
+
+.noFooter .body {
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.main {
+  margin-top: 2em;
+}
+
+h1 {
+  text-align: center;
+  color: #a63e2d;
+}
+
+.introC {
+  font-size: 120%;
+  font-style: italic;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: #c8d7d7 solid 4px;
+}
+
+/* ----------- content image -------------*/
+.eImage {
+  background-color: white;
+}
+
+.iLegend {
+  color: #555;
+}
+.iLegend a:link {
+  color: #555;
+}
+.iLegend a:visited {
+  color: #6e6e6e;
+}
+.iLegend a:hover {
+  color: red;
+}
+
+.iLegend, .pageTop, .pageFooter {
+  font-size: 85%;
+  line-height: 1.3;
+}
+
+/* ----------- sidebar -------------*/
+.sidebar {
+  margin: 2em 0;
+}
+
+.subMenu, .sidebarBox {
+  margin-left: 0;
+}
+
+.subMenu h3 {
+  margin: 0;
+  padding-left: 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #7da2a2;
+}
+.subMenu ul {
+  font-size: 85%;
+  line-height: 1.3;
+  border-top: #d7e2e2 solid 1px;
+}
+.subMenu ul ul {
+  border-top-width: 0;
+  font-size: 100%;
+}
+.subMenu ul a, .subMenu ul span {
+  padding-left: 20px;
+}
+.subMenu ul a:visited {
+  color: #666666;
+}
+.subMenu ul a:hover {
+  background-color: white;
+  text-decoration: underline;
+}
+.subMenu .currentSidebarItem span {
+  font-weight: bold;
+  color: #a63e2d;
+}
+.subMenu li {
+  border-bottom: #d7e2e2 solid 1px;
+}
+.subMenu li li {
+  border-bottom-width: 0;
+  padding-left: 10px;
+}
+
+.sidebarBox {
+  padding: 20px;
+  font-size: 85%;
+  line-height: 1.3;
+  background-color: #e5eded;
+  color: #4d4d4d;
+}
+.sidebarBox h3 {
+  color: #4d4d4d;
+}
+
+/* ----------- footer -------------*/
+.pageFooter {
+  background: #c47366;
+  color: #fdfaf9;
+}
+.pageFooter .inner {
+  padding: 10px 20px;
+}
+.pageFooter a:link, .pageFooter a:visited {
+  color: #efd8d4;
+}
+
+/* ----------- extra ---------------*/
+.siteTitle {
+  display: none;
+}
+
+.footer {
+  background-color: #f9f7f1;
+}
+.footer p {
+  font-size: 80%;
+  padding: 10px 25px 5px 25px;
+  margin:0;
+  text-align: center;
+  color: #888;
+}
+.footer a {
+  color: #888;
+}
+
+blockquote {
+  padding-left:15px;
+}

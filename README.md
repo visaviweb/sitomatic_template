@@ -1,0 +1,1 @@
+# sitomatic_template
